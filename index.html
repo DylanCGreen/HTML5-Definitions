@@ -48,28 +48,64 @@ class type, "no-js" is there since Javascript is not enabled and "lang" is not s
 The body tag defines the body of the doc which contains all the content of the HTML doc
 -->
 <body>
+  <!--
+  [if IE] is a conditional statement where if IE is true, then this happens
+  -->
+  <!--
+  p tags define paragraphs that contain any structural grouping of related content
+  -->
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <!--
+  div tag defines a division or a section in an HTML document
+  -->
   <div id="Heading">
     <p class="red">Hello world! This is HTML5 Boilerplate</p>
     <p class="blue">Hello world! This is HTML5 Boilerplate</p>
+    <!--
+    h tags are used to define HTML headings with h1 being the most important to h6 as least important
+    -->
     <h1 class="red">Heading 1</h1>
+    <!--
+    end div tag
+    -->
   </div>
+  <!--
+  script tags define a client-side script and either contains scripting statements or points to an external script file
+  -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <!--
+  integrity attributes define a mechanism that can verify that a fetched resource had been delivered without manipulation
+  -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--
+  src attributes are required to specify the URL of an image
+  -->
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--
+  ga command provides an interface for doing anything with the analytics.js library
+  -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
+  <!--
+  async is a boolean attribute that specifies the script will be executed asynchronously when available
+  -->
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!--
+closing body tag
+-->
 </body>
 
+<!--
+closing html tag
+-->
 </html>
